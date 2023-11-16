@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/search.png">
+</head>
+<body>
+        <div class="header">
+            <div>
+                <h2>To Do List</h2>
+            </div>
+            <div class="header-search">
+                <div class="search-container">
+                    <input id="searchInput" type="text" placeholder="Enter title, eg: buy milk"/>
+                    <img src="assets/search.png" width="32" id="searchButton"/>
+                </div>
+                <button id="addButton" type="button" class="btn btn-warning add-btn">Add</button>
+            </div>
+        </div>
+       <div class="main">
+           <div class="status">
+               <div class="statuses">
+                   <div class="status-item">
+                       <span class="status-item__title">Remaining</span>
+                       <span id="remaining" class="status-item__number">0</span>
+                   </div>
+                   <div class="status-item">
+                       <span class="status-item__title">Completed</span>
+                       <span id="completed" class="status-item__number">0</span>
+                   </div>
+                   <div class="status-item">
+                       <span class="status-item__title">Total</span>
+                       <span id="total" class="status-item__number">0</span>
+                   </div>
+               </div>
+           </div>
+           <div class="list">
+               <div id="todos" class="todos">
+               </div>
+           </div>
+       </div>
+        <script src="main.js"></script>
+</body>
+</html>
